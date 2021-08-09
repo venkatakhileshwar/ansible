@@ -1,0 +1,12 @@
+---
+ - name: testing the ansible
+   hosts: localhost
+   tasks:
+    - name: ansibleversion
+      shell: ansible --version
+      register: ansiblename
+    - name: printing the version
+      debug:
+       var: ansiblename.stdout
+
+ 
