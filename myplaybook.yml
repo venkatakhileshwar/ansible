@@ -1,5 +1,5 @@
 ---
- - name: testing the github
+ - name: testing the git
    hosts: localhost
    tasks:
     - name: gitversion
