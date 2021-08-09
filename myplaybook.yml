@@ -1,0 +1,12 @@
+---
+ - name: testing the github
+   hosts: localhost
+   tasks:
+    - name: gitversion
+      shell: git --version
+      register: gitname
+    - name: printing the version
+      debug: 
+       var: gitname.stdout
+         
+
