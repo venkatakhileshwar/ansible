@@ -1,0 +1,12 @@
+---
+ - name: testing the python
+   hosts: localhost
+   tasks:
+    - name: pythonversion
+      shell: python --version
+      register: pythonname
+    - name: printing the version
+      debug:
+       var: pythonname.stdout
+
+
